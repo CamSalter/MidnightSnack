@@ -1,0 +1,16 @@
+{
+	"manifest_version": 3,
+	"name": "Midnight Snack",
+	"description": "MIDNIGHT SNACK",
+	"version": "1.0.0",
+	"permissions": [
+    "storage"
+  ],
+	"content_scripts": [
+		{
+		"matches": ["https://*/*"],
+		"js": ["scripts/content.js"], 
+		"run_at": "document_end" 
+		}
+	]
+}
